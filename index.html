@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>liw</title>
+<meta name="description" content="liw 가 만드는 게임" />
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --dim: #5c5c5c;
+    --rule: #e0e0e0;
+    --bg: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e8e8e8;
+      --dim: #a0a0a0;
+      --rule: #333333;
+      --bg: #141414;
+    }
+  }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", "Malgun Gothic", sans-serif;
+    line-height: 1.7;
+    max-width: 34rem;
+    margin: 0 auto;
+    padding: 5rem 1.25rem 6rem;
+  }
+  h1 { font-size: 1.75rem; margin: 0 0 2.5rem; }
+  h2 { font-size: 1.05rem; margin: 0 0 0.35rem; }
+  .game {
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  .game p { margin: 0; color: var(--dim); font-size: 0.95rem; }
+  .game a { color: inherit; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--dim);
+    font-size: 0.9rem;
+  }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+
+<h1>liw</h1>
+
+<div class="game">
+  <h2>Maze Ring</h2>
+  <p>
+    판을 돌려 공을 미로 밖으로 내보내는 게임.
+    <a href="/maze-ring/privacy/">개인정보처리방침</a>
+  </p>
+</div>
+
+<footer>
+  <a href="mailto:liwdevelop@gmail.com">liwdevelop@gmail.com</a>
+</footer>
+
+</body>
+</html>
