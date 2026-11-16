@@ -46,7 +46,7 @@
 
 <!-- ============================= 한국어 ============================= -->
 <h1 id="ko">기울면 안 돼 개인정보처리방침</h1>
-<p class="meta">시행일: 2026-11-05 · 최종 수정: 2026-11-05</p>
+<p class="meta">시행일: 2026-11-16 · 최초 시행: 2026-11-05</p>
 
 <p>
   기울면 안 돼(영문명 Don't Tip the Ship, 이하 "이 게임")는 계정을 만들지 않고, 인앱 결제를 받지 않으며,
@@ -54,10 +54,10 @@
   정보는 없습니다.
 </p>
 <p>
-  다만 <strong>Android 버전은 광고를 보여 주기 위해 Google AdMob 을 사용</strong>하며, 광고 SDK 가 2항의
+  다만 <strong>Android·iOS 버전은 광고를 보여 주기 위해 Google AdMob 을 사용</strong>하며, 광고 SDK 가 2항의
   정보를 Google 에 보냅니다. 웹·Windows 버전에는 광고가 없습니다.
 </p>
-<p class="note">적용 대상: Android 앱(패키지 <code>com.evenkeel.game</code>), 웹 버전, Windows 버전</p>
+<p class="note">적용 대상: Android 앱(패키지 <code>com.evenkeel.game</code>), iOS 앱(번들 ID <code>com.evenkeel.game</code>), 웹 버전, Windows 버전</p>
 
 <h2>1. 기기에만 저장되는 것</h2>
 <p>
@@ -75,7 +75,7 @@
   붙여 넣을 곳은 이용자가 정합니다.
 </p>
 
-<h2>2. 광고 SDK 가 보내는 정보 (Android 버전)</h2>
+<h2>2. 광고 SDK 가 보내는 정보 (Android·iOS 버전)</h2>
 <p>
   광고는 <a href="https://admob.google.com">Google AdMob</a>(Google LLC, 미국)이 제공합니다. 이 게임은
   힌트를 받을 때(이용자가 고를 때만), 항구 단계가 올라 보너스 힌트를 고를 때, 배와 배 사이, 그리고 앱을 오래
@@ -85,16 +85,15 @@
 <table>
   <tr><th>항목</th><th>설명</th></tr>
   <tr><td>IP 주소</td><td>기기의 대략적인 위치를 추정하는 데 쓰일 수 있습니다.</td></tr>
-  <tr><td>앱 이용 정보</td><td>앱 실행, 광고 탭, 동영상 광고 시청 등</td></tr>
-  <tr><td>진단 정보</td><td>앱 실행 시간, 응답 없음 빈도, 전력 사용 등 앱과 SDK 의 성능 정보</td></tr>
-  <tr><td>기기·계정 식별자</td><td>Android 광고 ID, 앱 세트 ID, 해당하는 경우 기기에 로그인된 계정과 관련된 식별자</td></tr>
+  <tr><td>앱 이용 정보</td><td>앱 실행, 광고 탭, 동영상 광고 시청, 본 광고 등</td></tr>
+  <tr><td>진단 정보</td><td>앱 실행 시간, 응답 없음 빈도, 전력 사용 등 앱과 SDK 의 성능 정보, 이용자와 연결되지 않은 충돌 기록</td></tr>
+  <tr><td>기기·계정 식별자</td><td>Android: 광고 ID, 앱 세트 ID, 해당하는 경우 기기에 로그인된 계정과 관련된 식별자<br />iOS: 광고 식별자(IDFA, 이용자가 추적을 허용한 경우에만) 등 기기 식별자</td></tr>
 </table>
 <p>
   목적은 <strong>광고 게재, 광고 성과 측정, 부정 행위 방지</strong>이며, 이용자가 허용한 경우 맞춤형 광고에도
-  쓰입니다. 전송 내용은 TLS 로 암호화됩니다. 위 목록은 Google 이 Google Mobile Ads SDK(이 게임이 쓰는 25.5.0
-  버전)에 대해 공개한
-  <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">데이터 공개 자료</a>를
-  따릅니다.
+  쓰입니다. 전송 내용은 TLS 로 암호화됩니다. 위 목록은 Google 이 Google Mobile Ads SDK(이 게임이 쓰는 Android 25.5.0,
+  iOS 13.12.0 버전)에 대해 공개한 데이터 공개 자료(<a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Android</a>,
+  <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">iOS</a>)를 따릅니다.
 </p>
 <p>
   개발자는 AdMob 에서 광고 노출 수·수익 같은 집계 통계만 받으며, 개별 이용자를 알아볼 수 있는 정보는 받지
@@ -111,7 +110,7 @@
 <h2>3. 맞춤형 광고와 선택권 (행태정보)</h2>
 <table>
   <tr><th>구분</th><th>내용</th></tr>
-  <tr><td>수집하는 행태정보</td><td>앱 이용 정보, Android 광고 ID, IP 주소 (2항)</td></tr>
+  <tr><td>수집하는 행태정보</td><td>앱 이용 정보, Android 광고 ID, iOS 광고 식별자(IDFA, 추적을 허용한 경우), IP 주소 (2항)</td></tr>
   <tr><td>수집 방법</td><td>앱 실행·광고 요청 시 광고 SDK 가 자동으로 수집해 Google 에 전송</td></tr>
   <tr><td>수집·처리하는 자</td><td>Google LLC</td></tr>
   <tr><td>목적</td><td>맞춤형 광고를 포함한 광고 게재와 성과 측정</td></tr>
@@ -121,7 +120,10 @@
   <li><strong>동의 화면</strong> — 유럽 경제 지역·영국·스위스 등 관련 법령상 동의가 필요한 지역에서는 광고를
       불러오기 전에 Google 의 동의 화면을 보여 줍니다. 그 지역에서는 게임 설정 창의
       <strong>'개인정보 설정'</strong> 버튼으로 언제든 선택을 바꿀 수 있습니다.</li>
-  <li><strong>광고 ID 재설정·삭제</strong> — Android 설정의 '광고' 메뉴(기기에 따라 설정 &gt; 개인정보 보호
+  <li><strong>추적 허용 (iOS)</strong> — iOS 버전은 처음 실행할 때 Google 의 안내 화면에 이어 iOS 의
+      '추적 허용' 창을 보여 줍니다. 허용하지 않으면 앱은 광고 식별자(IDFA)를 받지 못하며, 광고는 IDFA 없이
+      나옵니다. 설정 &gt; 개인정보 보호 및 보안 &gt; 추적에서 이 게임의 추적 허용을 언제든 켜거나 끌 수 있습니다.</li>
+  <li><strong>광고 ID 재설정·삭제 (Android)</strong> — Android 설정의 '광고' 메뉴(기기에 따라 설정 &gt; 개인정보 보호
       &gt; 광고, 또는 설정 &gt; Google &gt; 광고)에서 광고 ID 를 재설정하거나 삭제할 수 있습니다. 삭제하면
       앱은 광고 ID 를 받지 못합니다.</li>
   <li><strong>Google 계정의 맞춤 광고</strong> — <a href="https://myadcenter.google.com">내 광고 센터</a>에서
@@ -156,7 +158,7 @@
 <ul>
   <li><strong>기기 내 정보 삭제</strong> — 앱을 삭제하거나 앱 데이터를 지우면 1항의 정보가 모두 지워집니다.
       진행 기록과 보유 힌트도 함께 사라집니다.</li>
-  <li><strong>광고 관련 선택</strong> — 3항의 방법으로 동의를 바꾸거나 광고 ID 를 재설정·삭제할 수 있습니다.</li>
+  <li><strong>광고 관련 선택</strong> — 3항의 방법으로 동의나 추적 허용(iOS)을 바꾸거나, 광고 ID(Android)를 재설정·삭제할 수 있습니다.</li>
   <li><strong>Google 이 보유한 정보</strong> — 열람·삭제 요청은
       <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>에 안내된 방법으로 하실 수 있습니다.</li>
   <li>열람·정정·삭제·처리정지 요구 등 관련 법령이 보장하는 권리를 행사하실 수 있습니다. 개발자는 이용자를
@@ -173,6 +175,10 @@
 <p>
   이 방침이 바뀌면 이 페이지에 수정된 내용과 시행일을 게시합니다. 중요한 변경은 앱 안에서도 알려 드립니다.
 </p>
+<p class="note">
+  변경 이력: 2026-11-16 — iOS 앱을 적용 대상에 더하고, iOS 광고 식별자(IDFA)와 추적 허용 내용을 더했습니다.
+  Android·웹·Windows 버전의 처리 내용은 바뀌지 않았습니다.
+</p>
 
 <h2>9. 연락처</h2>
 <p>
@@ -187,7 +193,7 @@
 
 <!-- ============================= English ============================= -->
 <h1 id="en" lang="en">Don't Tip the Ship Privacy Policy</h1>
-<p class="meta" lang="en">Effective: 2026-11-05 · Last updated: 2026-11-05</p>
+<p class="meta" lang="en">Effective: 2026-11-16 · First effective: 2026-11-05</p>
 
 <div lang="en">
 <p>
@@ -196,10 +202,10 @@
   The Game sends nothing to the developer's servers.
 </p>
 <p>
-  However, <strong>the Android version uses Google AdMob to show ads</strong>, and the ads SDK sends the
+  However, <strong>the Android and iOS versions use Google AdMob to show ads</strong>, and the ads SDK sends the
   information in section 2 to Google. The web and Windows versions have no ads.
 </p>
-<p class="note">Applies to: the Android app (package <code>com.evenkeel.game</code>), the web version, and the Windows version</p>
+<p class="note">Applies to: the Android app (package <code>com.evenkeel.game</code>), the iOS app (bundle ID <code>com.evenkeel.game</code>), the web version, and the Windows version</p>
 
 <h2>1. Stored only on your device</h2>
 <p>
@@ -217,7 +223,7 @@
   does not send it anywhere; you decide where to paste it.
 </p>
 
-<h2>2. Sent by the ads SDK (Android version)</h2>
+<h2>2. Sent by the ads SDK (Android and iOS versions)</h2>
 <p>
   Ads are provided by <a href="https://admob.google.com">Google AdMob</a> (Google LLC, USA). The Game shows ads
   when you choose to watch one for a hint, when you choose a bonus-hint ad after your harbor level goes up,
@@ -227,15 +233,15 @@
 <table>
   <tr><th>Item</th><th>Notes</th></tr>
   <tr><td>IP address</td><td>May be used to estimate the general location of the device.</td></tr>
-  <tr><td>App interactions</td><td>App launches, ad taps, video ad views, and similar</td></tr>
-  <tr><td>Diagnostic information</td><td>Performance of the app and the SDK, such as launch time, hang rate and energy usage</td></tr>
-  <tr><td>Device and account identifiers</td><td>Android advertising ID, app set ID, and, if applicable, identifiers related to accounts signed in on the device</td></tr>
+  <tr><td>App interactions</td><td>App launches, ad taps, video ad views, ads you have seen, and similar</td></tr>
+  <tr><td>Diagnostic information</td><td>Performance of the app and the SDK, such as launch time, hang rate and energy usage, and crash logs not linked to you</td></tr>
+  <tr><td>Device and account identifiers</td><td>Android: advertising ID, app set ID, and, if applicable, identifiers related to accounts signed in on the device<br />iOS: the advertising identifier (IDFA, only if you allow tracking) and other device identifiers</td></tr>
 </table>
 <p>
   The purposes are <strong>serving ads, measuring ad performance, and preventing fraud</strong>, and, where you
-  allow it, personalized ads. Data is encrypted in transit with TLS. This list follows Google's
-  <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">data disclosure</a> for the
-  Google Mobile Ads SDK (version 25.5.0, which the Game uses).
+  allow it, personalized ads. Data is encrypted in transit with TLS. This list follows Google's data disclosures
+  (<a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Android</a>,
+  <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">iOS</a>) for the Google Mobile Ads SDK versions the Game uses (Android 25.5.0, iOS 13.12.0).
 </p>
 <p>
   The developer receives only aggregate statistics from AdMob, such as impressions and revenue, and nothing
@@ -251,7 +257,7 @@
 <h2>3. Personalized ads and your choices</h2>
 <table>
   <tr><th>Item</th><th>Details</th></tr>
-  <tr><td>Behavioral data collected</td><td>App interactions, Android advertising ID, IP address (section 2)</td></tr>
+  <tr><td>Behavioral data collected</td><td>App interactions, Android advertising ID, iOS advertising identifier (IDFA, if you allow tracking), IP address (section 2)</td></tr>
   <tr><td>How it is collected</td><td>Automatically by the ads SDK when the app starts and when ads are requested, and sent to Google</td></tr>
   <tr><td>Collected and processed by</td><td>Google LLC</td></tr>
   <tr><td>Purpose</td><td>Serving and measuring ads, including personalized ads</td></tr>
@@ -261,7 +267,11 @@
   <li><strong>Consent screen</strong> — In regions where the law requires consent, such as the European Economic
       Area, the UK and Switzerland, Google's consent screen is shown before ads are loaded. In those regions you
       can change your choice at any time with the <strong>Privacy settings</strong> button in the Game's settings.</li>
-  <li><strong>Reset or delete your advertising ID</strong> — In Android settings, open the Ads menu (Settings &gt;
+  <li><strong>Allow tracking (iOS)</strong> — On first launch, the iOS version shows Google's explainer followed by
+      the iOS "Allow Tracking" prompt. If you don't allow it, the app cannot read the advertising identifier (IDFA)
+      and ads are shown without it. You can turn tracking for the Game on or off at any time in Settings &gt;
+      Privacy &amp; Security &gt; Tracking.</li>
+  <li><strong>Reset or delete your advertising ID (Android)</strong> — In Android settings, open the Ads menu (Settings &gt;
       Privacy &gt; Ads, or Settings &gt; Google &gt; Ads, depending on the device). Once deleted, apps can no
       longer read the advertising ID.</li>
   <li><strong>Personalized ads on your Google Account</strong> — Turn them off in
@@ -298,8 +308,8 @@
 <ul>
   <li><strong>Delete device data</strong> — Uninstalling the Game or clearing its app data removes everything in
       section 1, including your progress and hints owned.</li>
-  <li><strong>Ad choices</strong> — Change your consent or reset or delete your advertising ID as described in
-      section 3.</li>
+  <li><strong>Ad choices</strong> — Change your consent or tracking permission (iOS), or reset or delete your
+      advertising ID (Android), as described in section 3.</li>
   <li><strong>Data held by Google</strong> — Request access or deletion as described in the
       <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
   <li>You may exercise any further rights granted by applicable law, including access, correction, deletion and
@@ -317,6 +327,10 @@
 <p>
   If this policy changes, the updated text and its effective date will be posted on this page. Significant
   changes will also be announced in the Game.
+</p>
+<p class="note">
+  Change history: 2026-11-16 — Added the iOS app, and the iOS advertising identifier (IDFA) and tracking
+  permission. Nothing changed for the Android, web or Windows versions.
 </p>
 
 <h2>9. Contact</h2>
